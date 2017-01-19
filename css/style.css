@@ -156,6 +156,7 @@ a, a:hover{text-decoration: none;}
     margin-top: 5%;
     float: right;
     position: fixed;
+    z-index: 9999;
 }
 
 .header h1{font-family: 'Pacifico', cursive; 
@@ -313,6 +314,8 @@ a, a:hover{text-decoration: none;}
 
 /*------ Home PAGE END ---------*/
 
+
+/*===== about me ========*/
 .aboutMe{
     min-height: 100%;
     height: auto;
@@ -365,6 +368,8 @@ a, a:hover{text-decoration: none;}
 #delay-2{animation-delay: 0.2s;}
 #delay-4{animation-delay: 0.4s;}
 #delay-6{animation-delay: 0.6s;}
+
+/*===== about me  MEDIA========*/
 @media screen and (min-width:768px) {
     #ipad{display: block; float: right; margin-right: -10%; }
     
@@ -372,4 +377,198 @@ a, a:hover{text-decoration: none;}
     .aboutMe h1{ font-size: 2em; }
     .aboutMe p { width: 60%; font-size: 1.1em; }
     .aboutMe h2{ width: 50%; margin-left: 2%; font-size: 1em; }
+}
+@media screen and (min-width:1024px) {
+    #ipad{display: block; float: right; margin-right: -10%; }
+    
+    .aboutMe{text-align: left;overflow: hidden;height: 100%; padding: 2% 0;}
+    .aboutMe h1{ font-size: 2.2em; }
+    .aboutMe p { width: 60%; font-size: 1.3em; }
+    .aboutMe h2{ width: 50%; margin-left: 2%; font-size: 1.1em; }
+}
+
+/*===== about me END ========*/
+
+/*************** portfolio  ******************/
+
+.portfolio{
+    min-height: 100%;
+    height: auto;
+    padding: 5% 0;
+  
+    text-align: center;
+}
+
+
+.portfolio h1{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 7%;
+    font-size: 1.7em;
+    color: #545454;
+}
+.portfolio p{
+    font-family: 'ABeeZee', sans-serif;
+    
+    margin-top: 5%;
+    color: #7e7e7e;
+}
+
+.portfolio h2{
+    text-align: right;
+    margin-left: 5%;
+     font-family:  cursive;
+    font-size: 1em;
+    margin-top: 5%;
+    color: #8f8f8f;
+    border-left: 6px #4eacdd solid;
+    margin-bottom: 7%;
+}
+
+
+#device{display: none; max-width: 100%; height: auto;}
+/*************** portfolio MEDIA  ******************/
+@media screen and (min-width:768px) {
+    
+    #device{display: block; float: left; margin-right: -10%; margin-left: -14%; max-width: 60%; }
+    
+    .portfolio{text-align: right;overflow: hidden;height: 100%; padding: 2% 0;}
+    .portfolio h1{ font-size: 2em; }
+    .portfolio p { width: 60%; font-size: 1.1em; margin-left: 40%; }
+    .portfolio h2{ width: 50%; margin-left: 2%; font-size: 1em;margin-left: 50%;  }
+}
+
+@media screen and (min-width:1024px) {
+    #device {max-width: 100%;margin-top: 7%;}
+   
+}
+
+/*************** portfolio END  ******************/
+
+.donate{
+	height: 100%;
+	
+	background: white url(../img/bg2.png) no-repeat center ;
+	 width: 100%;
+     background-attachment: fixed;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+ 
+}
+
+.donate h1{
+    
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2em;
+    color: white;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+
+.donateBtn {padding: 15px 35px;
+    border: 5px white solid;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Days One', sans-serif;
+    
+    cursor: pointer;
+}
+
+.donateBtn:hover{box-shadow: 0 0 17px rgba(250,250,250,0.7); }
+
+
+@media screen and (min-width:768px) {
+    .donate h1{
+        font-size: 3em;
+        margin-bottom: 10%;
+    }
+}
+
+
+
+.contact{
+    height: 100%;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact i {
+    margin-top: 32%;
+    margin-left: 2%;
+    cursor: pointer;
+    color: #545454
+}
+.contact i:hover{zoom:1.1;
+    transition: 0.5s;
+}
+
+#delayicon-1{animation-delay: 0.3s;}
+#delayicon-2{animation-delay: 0.4s;}
+#delayicon-3{animation-delay: 0.5s;}
+#delayicon-4{animation-delay: 0.6s;}
+#delayicon-5{animation-delay: 0.7s;}
+
+
+
+.contact h1{
+    font-family: 'Contrail One', cursive;
+    font-size: 1.4em;
+    margin-top: 17%;
+    color: #545454;
+}
+
+
+.email{padding: 5% 5%;
+width: 80%;
+    
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 15%;
+}
+
+.email:hover{box-shadow: 0 0 17px rgba(0,0,0,0.7);  }
+.email:focus{box-shadow: 0 0 17px rgba(0,0,0,0.7);  }
+
+@media screen and (min-width:768px) {
+    .contact i {
+    margin-top: 14%;
+    margin-left: 4%;
+}
+    
+    .contact h1{
+        margin-top: 10%;
+        font-size: 2.5em;
+        
+    }
+    
+    .email{width: 50%;
+    padding: 3% 3%;
+        margin-top: 10%;
+    }
+
+    
+}
+
+@media screen and (min-width:1024px) {
+    .contact i {
+    margin-top: 14%;
+    margin-left: 4%;
+}
+    
+    .contact h1{
+        margin-top: 9%;
+        font-size: 2.5em;
+        
+    }
+    
+    .email{width: 30%;
+    padding: 2% 2%;
+        margin-top: 2%;
+    }
+
+    
 }

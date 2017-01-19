@@ -78,6 +78,22 @@ $(document).ready(function() {
     $(".aboutMe p").animated("bounceInLeft","bounceInRight");
     $(".aboutMe h2").animated("bounceInLeft","bounceInRight");
     $(".sayHello").animated("bounceIn","bounceInRight");
+    
+    
+    
+    $("#device").animated("zoomInDown","bounceOutLeft" );
+    
+      $(".portfolio h1").animated("zoomInRight","bounceInRight");
+    $(".portfolio p").animated("zoomInRight","bounceInRight");
+    $(".portfolio h2").animated("zoomInRight","bounceInRight");
+    
+    
+     $(".donate h1").animated("fadeInUpBig","bounceInRight");
+    
+    $(".contact i").animated("fadeInDownBig","bounceInRight");
+    
+     $(".contact h1").animated("fadeInUpBig","bounceInRight");
+$(".mail").animated("fadeInUpBig","bounceInRight");
 });
 
 

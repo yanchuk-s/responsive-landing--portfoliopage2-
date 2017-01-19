@@ -13,6 +13,9 @@
 <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=ABeeZee|Architects+Daughter|Pacifico" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">	  
+ <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
       
       
       
@@ -30,7 +33,7 @@
  	<body>
 		
         
-        <div class="header clearfix">
+        <div class="header clearfix" id="homeSection">
             <div class="container" id="myBd">
                 
                 <img src="img/logo.png">
@@ -61,10 +64,10 @@
   
       
 
-    <a href="#"><i class="fa fa-home" aria-hidden="true"></i> home</a>
-    <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i> about me</a>
-    <a href="#"><i class="fa fa-television" aria-hidden="true"></i> portfolio</a>
-    <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i> drop me a line</a>
+    <a href="#homeSection" id="home" ><i class="fa fa-home" aria-hidden="true"></i> home</a>
+    <a href="#aboutmeSection" id="aboutme"><i class="fa fa-heart-o" aria-hidden="true"></i> about me</a>
+    <a href="#portfolioSection" id="portfolio"><i class="fa fa-television" aria-hidden="true"></i> portfolio</a>
+    <a href="#dropSection" id="drop"><i class="fa fa-envelope" aria-hidden="true"></i> drop me a line</a>
       
       
       
@@ -78,8 +81,8 @@
         </div>
         
         
-        <div class="aboutMe" >
-            <div class="container " id="myBd">
+        <div class="aboutMe clearfix" id="aboutmeSection" >
+            <div class="container " id="myBd ">
                 <h1 id="delay-2">A Longwinded Header</h1>
                   <img id="ipad" src="img/ipad.png">
                 <p id="delay-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis ipsum, feugiat a tristique eget, mollis non massa. Nunc non vestibulum mi, nec semper leo. Integer laoreet ultricies lacus in dictum. </p>
@@ -93,8 +96,50 @@
             </div>
         </div>  
       
-        
+        <div class="portfolio clearfix">
+            <div class="container">
+                 <h1 id="delay-2">Another header copy</h1>
+                  
+                <p id="delay-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce felis ipsum, feugiat a tristique eget, mollis non massa. </p>
+               
+               <img id="device" src="img/devices.png">
+                
+                <h2 id="delay-6">Etiam a dignissim nisl, eu iaculis metus. Curabitur nec ultricies ligula. In posuere risus et vehicula auctor.  </h2>
+                 
+                <a href="" class="sayHello" >VIEW ON DRIBBBLE <i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+            </div>
+        </div>
       
+        
+        
+        <div class="donate clearfix">
+            <div class="container">
+                
+                <h1>Like What You See?</h1>
+                <a class="donateBtn">BUY ME A BEER? <i class="fa fa-beer fa-2x" aria-hidden="true"></i></a>
+                
+            </div>
+        </div>
+        
+        <div class="contact clearfix">
+            <div class="container">
+                <i id="delayicon-1" class="fa fa-vk fa-3x" aria-hidden="true"></i>
+                <i id="delayicon-2" class="fa fa-facebook-official fa-3x" aria-hidden="true"></i>
+                <i id="delayicon-3" class="fa fa-github fa-3x" aria-hidden="true"></i>
+                <i id="delayicon-4" class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                <i id="delayicon-5" class="fa fa-skype fa-3x" aria-hidden="true"></i>
+                
+        
+                    <h1>Newsletter Subscription</h1>
+                    
+                    <input type="text" class="email" placeholder="Enter Email" name="emal">
+                    
+                
+                
+            </div>
+        </div>
+        
+        
         
             
 	   <script src="js/jquery-3.1.1.min.js"></script>
