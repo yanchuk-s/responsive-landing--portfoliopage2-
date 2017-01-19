@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 /* Open when someone clicks on the span element */
 function openNav() {
-    document.getElementById("myNav").style.height = "100%";
+   document.getElementById("myNav").style.height = "100%";
     
     document.getElementById("myBd").style.padding = "5%";
 
@@ -33,3 +33,11 @@ function closeNav() {
     document.getElementById("myBd").style.padding = "0";
      
 }
+
+function animateImg() {
+     document.getElementById("iphone").addClass('animated fadeInDown');
+}
+
+$('#iphone').addClass('animated fadeInDown');
+
+

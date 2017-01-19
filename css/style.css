@@ -57,7 +57,29 @@ a, a:hover{text-decoration: none;}
 }
 
 
-
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
 
 
 .cols{
@@ -105,7 +127,7 @@ a, a:hover{text-decoration: none;}
 	
 }
 
-
+/*------ Home PAGE ---------*/
 
 .header{
 	min-height: 100%;
@@ -133,7 +155,7 @@ a, a:hover{text-decoration: none;}
     cursor: pointer;
     margin-top: 5%;
     float: right;
-    
+    position: fixed;
 }
 
 .header h1{font-family: 'Pacifico', cursive; 
@@ -175,7 +197,7 @@ a, a:hover{text-decoration: none;}
      transition: 0.5s;
 }
 
-
+/*------ Home PAGE  MEDIA ---------*/
 
 @media screen and (min-width:500px) {
     .header h1{margin-top: 4%; font-size: 1.9em;}
@@ -208,6 +230,7 @@ a, a:hover{text-decoration: none;}
 /* The Overlay (background) */
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+   
     height: 0;
     width: 100%;
     position: fixed; /* Stay in place */
@@ -282,4 +305,71 @@ a, a:hover{text-decoration: none;}
     color: #4eacdd;
     border-radius: 50%;
     margin-right: 2%;
+}
+
+
+
+
+
+/*------ Home PAGE END ---------*/
+
+.aboutMe{
+    min-height: 100%;
+    height: auto;
+    padding: 5% 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+
+.aboutMe h1{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 7%;
+    font-size: 1.7em;
+    color: #545454;
+}
+.aboutMe p{
+    font-family: 'ABeeZee', sans-serif;
+    
+    margin-top: 5%;
+    color: #7e7e7e;
+}
+
+.aboutMe h2{
+    text-align: left;
+    margin-left: 5%;
+     font-family:  cursive;
+    font-size: 1em;
+    margin-top: 5%;
+    color: #8f8f8f;
+    border-left: 6px #4eacdd solid;
+    margin-bottom: 7%;
+}
+
+
+#ipad{display: none; max-width: 100%; height: auto;}
+
+
+.sayHello{padding: 20px 40px; border: 2px #14af8f solid; margin-bottom: 6%; 
+   
+    color: #14af8f; 
+    border-radius: 5px;
+}
+
+.sayHello:hover{ box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */}
+
+.fa-envelope-o {margin-left: 6%;}
+
+
+
+#delay-2{animation-delay: 0.2s;}
+#delay-4{animation-delay: 0.4s;}
+#delay-6{animation-delay: 0.6s;}
+@media screen and (min-width:768px) {
+    #ipad{display: block; float: right; margin-right: -10%; }
+    
+    .aboutMe{text-align: left;overflow: hidden;height: 100%; padding: 2% 0;}
+    .aboutMe h1{ font-size: 2em; }
+    .aboutMe p { width: 60%; font-size: 1.1em; }
+    .aboutMe h2{ width: 50%; margin-left: 2%; font-size: 1em; }
 }

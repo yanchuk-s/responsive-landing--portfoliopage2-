@@ -64,3 +64,20 @@ $(document).ready(function()
                 flag=!flag;}
     });
 });
+
+
+// АНИМАЦИЯ ПРИ СКРОЛИ
+
+$(document).ready(function() {
+    
+
+    
+    $("#ipad").animated("bounceInRight","bounceOutLeft" );
+        
+    $(".aboutMe h1").animated("bounceInLeft","bounceInRight");
+    $(".aboutMe p").animated("bounceInLeft","bounceInRight");
+    $(".aboutMe h2").animated("bounceInLeft","bounceInRight");
+    $(".sayHello").animated("bounceIn","bounceInRight");
+});
+
+
